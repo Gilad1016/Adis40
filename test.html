@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="" style="font-family: 'Trebuchet MS', serif">
+<head>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: black url(./bg.avif) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+    </style>
+    <script>
+        function checkWord() {
+            const input = document.getElementById('wordInput').value
+                .toLowerCase().trim().replace(/^\.+|\.+$/g, '');
+            const output = document.getElementById('output');
+
+            const dictionary = {
+                'עברית': 'מעניין אם זה עובד.',
+                'banana': 'מעניין אם זה עובד.',
+                'orange': 'A fruit that is orange and juicy.'
+                // Add more words and their definitions as needed
+            };
+
+            if (dictionary.hasOwnProperty(input)) {
+                output.innerText = dictionary[input];
+            } else {
+                output.innerText = 'Sorry, wrong input';
+            }
+        }
+
+    </script>
+    <title></title>
+</head>
+<body dir="rtl" class="container">
+<form action="" method="post" style="justify-content:center; align-items:center">
+    <table>
+        <tbody>
+        <tr>
+            <h1>Happy Birthday</h1>
+        </tr>
+        <tr>
+            <td height="60" class="mtxt">Solve page 5:</td>
+        </tr>
+        <tr>
+            <td>
+                <label for="wordInput">
+                    <input autofocus="" id="wordInput" class="mtxtsolve" name="text" size="9" type="text">
+                </label>
+                <button class="mtxtsolve2" onclick="checkWord(); return false;">&gt;</button>
+            </td>
+            <td height="100">
+                <div id="output"></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
