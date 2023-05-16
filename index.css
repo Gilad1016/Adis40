@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: black url(./assets/bg.avif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff9900;
+}
