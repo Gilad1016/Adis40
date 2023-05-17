@@ -1,10 +1,10 @@
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
     height: 100%;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 50%;
     background: black url(./assets/bg.avif) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,8 +18,12 @@ h1 {
 }
 
 p {
+    word-wrap: break-word;
     font-size: 20px;
     margin-top: 50px;
+    display: inline-block;
+    text-align: justify;
+;
 }
 
 .button {
@@ -37,4 +41,11 @@ p {
 
 .button:hover {
     background-color: #ff9900;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
