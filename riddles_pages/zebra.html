@@ -25,29 +25,41 @@
     </script>
     <title></title>
 </head>
-<body dir="rtl" class="container">
-<form action="" method="post" style="justify-content:center; align-items:center">
-    <table>
-        <tbody>
-        <tr>
-            <h1>Happy Birthday</h1>
-        </tr>
-        <tr>
-            <td height="60" class="mtxt">Solve page 5:</td>
-        </tr>
-        <tr>
-            <td>
-                <label for="wordInput">
-                    <input autofocus="" id="wordInput" class="mtxtsolve" name="text" size="9" type="text">
-                </label>
-                <button class="mtxtsolve2" onclick="checkWord(); return false;">&gt;</button>
-            </td>
-            <td height="100">
-                <div id="output"></div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</form>
+<!--dir="rtl"-->
+<body  class="container">
+<div>
+    <h1>Happy Birthday</h1>
+</div>
+<ol class="text_container">
+    <li>There are five houses in a row, each with a different color: red, green, blue, yellow, and white.</li>
+    <li>Each house is occupied by a family member: Adi, Rikki, Emma, Liam, Tziona, Avishai, Yiftach, Gilad, Inbar and
+        Itamar.
+    </li>
+    <li>Each family member has a different favorite pet: dog, cat, fish, bird, and rabbit.</li>
+    <li>Each family member has a different favorite hobby: painting, reading, cooking, gardening, and playing music.
+    </li>
+    <li>Adi, Rikki, Emma, and Liam live together.</li>
+    <li>Tziona and Avishai live together.</li>
+    <li>Yiftach loves reading.</li>
+    <li>Gilad loves painting.</li>
+    <li>Itamar loves cooking.</li>
+    <li>Tziona lives in the green house.</li>
+    <li>The person who loves painting lives next to the person who has a fish.</li>
+    <li>Avishai has a dog.</li>
+    <li>The person who loves reading lives next to the person who has a bird.</li>
+    <li>Emma lives in the red house.</li>
+    <li>The person who loves cooking lives in the first house.</li>
+    <li>Liam lives next to the person who loves playing music.</li>
+    <li>The person who loves gardening lives in the yellow house.</li>
+    <li>The person who loves painting lives next to the blue house.</li>
+    <li>Itamar does not have a rabbit.</li>
+</ol>
+<div>
+    <label for="wordInput">
+        <input autofocus="" id="wordInput" name="text" size="9" type="text">
+    </label>
+    <button onclick="checkWord(); return false;">&gt;</button>
+</div>
+<div id="output"></div>
 </body>
 </html>

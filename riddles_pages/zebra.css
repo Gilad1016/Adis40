@@ -37,7 +37,23 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
+  align-items: center;
+}
+
+.text_container {
+  max-width: 60%;
+}
+
+ol {
+  padding: 0; /* Remove default padding */
+  margin-top: 10px; /* Increase space between list and previous element */
+  margin-bottom: 10px; /* Increase space between list and next element */
+  list-style-type: decimal; /* Set the numbering style */
+}
+
+li {
+  margin-bottom: 10px; /* Increase space between list items */
+  font-size: 16px; /* Increase font size */
 }
