@@ -1,6 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
-    height: 100%;
+    font-family: 'Amatic SC', cursive;
     width: 100%;
     padding: 0;
     margin: 0 auto;
@@ -19,20 +18,21 @@ h1 {
 
 p {
     word-wrap: break-word;
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: inline-block;
     text-align: justify;
-;
 }
 
 .button {
     display: inline-block;
-    margin-top: 50px;
     padding: 10px 20px;
     background-color: #ffcc00;
     color: #fff;
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: 800;
     text-decoration: none;
     border: none;
     cursor: pointer;
