@@ -1,32 +1,55 @@
-@font-face {
-    font-family: 'Amatic_SC';
-    src: url(https://fonts.google.com/share?selection.family=Amatic%20SC) format('woff2')
-    /* Add additional font formats here if available */
-    /* You can also provide a local path if the font is stored locally */
-}
+
 
 body {
-    font-family: 'Amatic_SC',cursive, sans-serif;
-    text-align: center;
-    padding: 20px;
+  font-family: 'Rubik', 'Rubik Glitch', cursive;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: black url(../assets/bg.avif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-#countdown {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.timer {
-    margin: 0 10px;
+.text_container {
+  max-width: 60%;
 }
 
-.timer span {
-    font-size: 40px;
-    font-weight: bold;
+ol {
+  padding: 0; /* Remove default padding */
+  margin-top: 10px; /* Increase space between list and previous element */
+  margin-bottom: 10px; /* Increase space between list and next element */
+  list-style-type: decimal; /* Set the numbering style */
 }
 
-.label {
-    font-size: 16px;
-    color: #888;
+li {
+  margin-bottom: 10px; /* Increase space between list items */
+  font-size: 16px; /* Increase font size */
+  font-weight: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff9900;
 }

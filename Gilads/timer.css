@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Amatic_SC';
+    src: url(https://fonts.google.com/share?selection.family=Amatic%20SC) format('woff2')
+    /* Add additional font formats here if available */
+    /* You can also provide a local path if the font is stored locally */
+}
+
+body {
+    font-family: 'Amatic_SC',cursive, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.timer {
+    margin: 0 10px;
+}
+
+.timer span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 16px;
+    color: #888;
+}
