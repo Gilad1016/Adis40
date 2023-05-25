@@ -1,0 +1,126 @@
+body {
+    font-family: 'Amatic SC', cursive;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    padding: 0;
+    margin: 0 auto;
+    max-width: 60%;
+    background: black url(../assets/bg.avif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+p {
+    word-wrap: break-word;
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.container_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_container {
+    width: 80%;
+    word-break: break-word;
+}
+
+ol {
+    padding: 0; /* Remove default padding */
+    margin-top: 10px; /* Increase space between list and previous element */
+    margin-bottom: 10px; /* Increase space between list and next element */
+    list-style-type: decimal; /* Set the numbering style */
+}
+
+li {
+    margin-bottom: 10px; /* Increase space between list items */
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.input-text {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    width: 300px; /* Adjust the width as needed */
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+.hidden-li {
+    display: none;
+    list-style-type: none; /* Remove the default list-style */
+}
+
+.hidden-button {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.invisible-div:hover .hidden-button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.invisible-button:hover + .hidden-li {
+    display: list-item;
+}
+
+.invisible-button:hover {
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffcc00;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff9900;
+}
+
+.hidden-p {
+    display: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    font-size: 26px;
+    font-weight: 800;
+}
+

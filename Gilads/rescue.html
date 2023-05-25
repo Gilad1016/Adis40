@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy 40th Birthday, Adi!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rescue.css">
+    <script src="gif.js"></script>
+</head>
+<body class="container_column" dir="rtl">
+<div class="invisible-div">
+    <button class="hidden-button invisible-button button">Show hidden items</button>
+</div>
+<h1>פרק 1</h1>
+<div>
+    <p>
+        חטיבת המודיעין מצאה עוד מידע אודות אירוע ההתרמה אך כמו כל דבר במדינה, הם לא עובדים מסודר ואיבדו אותו <br> הינה
+        כל המידע הידוע לנו.
+        כעת עלינו למצוא מי האדם בסכנה. הזדרז!! שנוכל להצילו!
+    </p>
+    <ul class="text_container">
+        <li>קבוצת האנשים שנהנית ממוחיטו הגיעה באיחור.</li>
+        <li>קבוצת האנשים הגדולה ביותר לא איחרה.</li>
+        <li>הקבוצה מתל אביב הגיעה לפני הקבוצה מירושלים.</li>
+        <li>קבוצת האנשים הגדולה ביותר היא לא מתל אביב.</li>
+        <li>הקבוצה ששותה יין אדום הגיעה אחרי הקבוצה ששותה בירה אבל לפני הקבוצה מירושלים.</li>
+        <li>איתמר היה האחרון שהגיע.</li>
+        <li>הסטודנטים תרמו את הסכום הקטן ביותר.</li>
+        <li>הקבוצה שמעדיפה יין לבן תרמה 20,000 דולר.</li>
+        <li>הקבוצה מהרצליה לא תרמה הכי הרבה.</li>
+        <li class="hidden-li">קבוצת האנשים הגדולה ביותר מעדיפה יין אדום.</li>
+        <li class="hidden-li">עומר הגיעה באיחור.</li>
+        <li class="hidden-li">גלעד הגיע לפני הקבוצה ששותה ג'ין אנד טוניק.</li>
+        <li class="hidden-li">הקבוצה של ריקי תרמה פי שניים מהסכום שנתרם על ידי קבוצה עם שני אנשים.</li>
+        <li class="hidden-li">אבישי הגיע בזריחה.</li>
+        <li class="hidden-li">נתרם 30,000$ על ידי אחת הקבוצות שהגיעו אחרי יפתח.</li>
+        <li class="hidden-li">הקבוצה מרעות לא מעדיפה יין לבן.</li>
+        <li id="disappearing-li">אני תוהה אם יש לך את כל הפרטים כדי להצליח?</li>
+    </ul>
+
+    <p class="hidden-p">ברגע שפתרת תלך ל/the person in danger</p>
+
+</div>
+
+<script>
+  const button = document.querySelector('button');
+  const hiddenItems = document.querySelectorAll('.hidden-li');
+  const hiddenParagraph = document.querySelector('.hidden-p');
+
+  button.addEventListener('click', () => {
+    hiddenItems.forEach(item => {
+      item.style.display = 'list-item';
+      item.style.listStyleType = 'disc';
+    });
+    hiddenParagraph.style.display = 'block';
+    button.style.display = 'none';
+  });
+</script>
+</body>
+</html>

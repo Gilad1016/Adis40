@@ -4,7 +4,7 @@ function checkWord() {
     const output = document.getElementById('output');
 
     const dictionary = {
-        'why is itamar always late': 'פששש אתה מקצוען, החידות הבאות בדרך. אני העזר בסבלנות ותרד על גלעד שעדיין לא בנה לך את ההמשך',
+        'why is itamar always late': ' פששש אתה מקצוען, לך ל/rescue ',
     };
 
     if (dictionary.hasOwnProperty(input)) {
