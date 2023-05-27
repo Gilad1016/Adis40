@@ -2,43 +2,35 @@
 <html lang="">
 <head>
     <meta charset="UTF-8">
-    <title>Happy 40th Birthday, Adi!</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body class="container" dir="rtl">
-<div class="container">
-    <p>
-        עדי היקר,
-        <br>
-        מי היה מאמין שתצליח להגיע לפאקינג 40?!
-        כדי לחגוג את יום הולדתך ה-40 אתה מוזמן לצאת להרפתקה יוצאת דופן!
-        <br>
-        הפעם זה יהיה קצת אחרת... הגיע הזמן לצאת להרפתקה יוצא דופן!
-        <br>
-        הרפתקה שאין כמותה!
-        <br>
-        הצטרף אלינו למסע דרך נקודות ציון בחייך.
-        <br>
-        ההרפתקה מחולקת למספר פרקים, כל פרק מכיל מספר אתגרים והזדמנויות ייחודיות.
-        <br>
-        האם אתה מוכן לצעוד אל הלא נודע ולגלות את האוצרות המסתתרים שמחכים לך?
-        <br>
-
-        שלך באהבה,
-        <br>
-        האחים - איתי, יפתי וגילי</p>
-    <a class="button" href="Gilads/init.html">בוא נצא לדרך</a>
-    <p>
-        שים לב:
-        <br>
-        כדי לחוות את ההרפתקה במלואה, אתה מתבקש להימנע מגישה לכל לקוד המקור של האתר(Dev tools) או
-        מאגרי GitHub שלו. מקורות אלו עלולים לחשוף מידע חיוני ולקלקל את ההפתעות שמחכות לך, אך זה לא אומר לא לחקור את תכני
-        המדיה המוגשים לך. עם זאת, אם אתה
-        נתקל באתגרים כלשהם או זקוק לסיוע לאורך הדרך, אל תהסס לחפש רמזים מהערוצים הייעודיים שאנו נספק.
-    </p>
+<body dir="rtl">
+<h1 style="font-size: 40px">פרק 2</h1>
+<h1>העזר בסבלנות</h1>
+<div id="countdown">
+    <div class="timer">
+        <span id="days">00</span>
+        <span class="label">ימים</span>
+    </div>
+    <div class="timer">
+        <span id="hours">00</span>
+        <span class="label">שעות</span>
+    </div>
+    <div class="timer">
+        <span id="minutes">00</span>
+        <span class="label">דקות</span>
+    </div>
+    <div class="timer">
+        <span id="seconds">00</span>
+        <span class="label">שניות </span>
+    </div>
 </div>
+
+<script src="./scripts/timer.js"></script>
 </body>
 </html>
